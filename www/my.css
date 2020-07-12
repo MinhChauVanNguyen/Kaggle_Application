@@ -1,0 +1,57 @@
+h1{
+    font-weight: 500;
+    color:black;
+    line-height: 1.1;
+}
+
+h3{
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h4{
+  background: linear-gradient(90deg, rgba(177,64,200,1) 0%, rgba(109,9,121,1) 35%, rgba(45,1,62,1) 100%);
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+  to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+}
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: #99FF00 !important;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing,.dataTables_wrapper .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+            color: #0000ff !important;
+        }
+
+#TITLE{
+  color:black; 
+  font-size:20px; 
+  font-style:italic; 
+  font-weight:bold;
+  text-align:center;
+}
+
+.btn{
+  background-color:greenyellow; 
+  font-weight:bold
+}
+
+.selectize-input {
+  border:2px solid #00FFCC;
+} 
+
+#SUMARY{background-color:honeydew; color:black; font-size:11px; font-style:bold;}
