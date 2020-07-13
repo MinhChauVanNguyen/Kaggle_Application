@@ -54,4 +54,27 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   border:2px solid #00FFCC;
 } 
 
-#SUMARY{background-color:honeydew; color:black; font-size:11px; font-style:bold;}
+#SUMARY{
+  background-color:honeydew; 
+  color:black; 
+  font-size:11px; 
+  font-style:bold;
+}
+
+
+#img_plot img {
+  max-width: 100%; 
+  width: 100%; 
+  height: auto
+}
+
+
+#img_plot2 img {
+  max-width: 100%; 
+  width: 100%; 
+  height: auto
+}
+
+.selectize-input{
+  border:2px solid #00FFCC;
+}

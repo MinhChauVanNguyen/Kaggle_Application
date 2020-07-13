@@ -1,4 +1,5 @@
 tabPanel("Poisson regression",
+         value = 5,
          hr(),
          "Poisson regression was used to predict the number of suicides based on the country input
                 and to interpret the data using the exponent of the coefficients as shown in the summary statistics.

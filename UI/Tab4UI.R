@@ -1,4 +1,5 @@
 tabPanel("Difference between Age groups",
+         value = 4, 
          hr(),
          "The Difference between Age groups tab creates a histogram of the number of suicides
                 for a country input and an age group input.",

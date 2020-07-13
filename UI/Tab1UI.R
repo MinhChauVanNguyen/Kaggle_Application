@@ -1,4 +1,5 @@
 tabPanel("Data Overview",
+         value = 1,
          hr(),
          # Introduction of the application
          h3("Introduction"),
@@ -27,5 +28,6 @@ tabPanel("Data Overview",
          br(),
          fluidRow(
            column(12, div(dataTableOutput("dataTable")))
-         )
+         ),
+         br()
 )

@@ -1,4 +1,5 @@
 tabPanel("Distribution of Age",
+         value = 3,
          hr(),
          "The Distribution of Age tab lets the users create a pie chart (based on the number of suicides) 
                 and a scatter plot (based on the suicide rate) from the country input. The green rectangle on the
