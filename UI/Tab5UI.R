@@ -2,15 +2,20 @@ tabPanel("Poisson regression",
          value = 5,
          br(),
          sidebarPanel(
-         "Poisson regression was used to predict the number of suicides based on the country input
-                and to interpret the data using the exponent of the coefficients as shown in the summary statistics.
-                Interaction plot (interaction term included) is another important output in this tab, it was used 
-                to visualize the interaction between Sex and Age. Using the interaction plot, the users will be able
-                to find out which age group and sex has a significantly high or low predicted number of suicides.
-                The scatter plot on the other hand does not take Sex into account, it is only looking at the predicted 
-                probability of the expected number of suicides plotted against year. The lines represents each age group's
-                predicted probability of committing suicide. The positive/negative slope shows the predicted probability
-                increases/decreases as the year goes by.",
+         tags$b("Poisson regression"),
+         "was used to predict the number of suicides and interpret the results by using
+          the coefficients as shown in the model summary statistics.", 
+          tags$b("Interaction plot"),
+          "(interaction term included) is another important output in this tab, used 
+          to visualize the interaction between Sex and Age. By using the interaction 
+          plot, the users will be able to find out which age group and sex has a significantly
+          high or low predicted number of suicides. The",
+          tags$b("scatter plot"), "on the other hand
+          does not take Sex into account, it is only looking at the predicted 
+          probability of the", tags$b("expected number of suicides"), 
+          "plotted against", tags$b("year"), "Each line represents an age group's
+          suicide rate, where they can be a positive or a negative slope showing 
+          increasesing/decreasing predicted probability over the years.",
          br(),
          br(),
          fluidRow(div(style= "display:inline-block; vertical-align:top;",

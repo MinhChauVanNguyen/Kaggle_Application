@@ -3,8 +3,11 @@ tabPanel("Difference between Age groups",
          br(),
          br(),
          sidebarPanel(
-         "The Difference between Age groups tab creates a histogram of the number of suicides
-                for a country input and an age group input.",
+         "The",
+         tags$b("Difference between Age groups"),
+         "tab creates a histogram
+         out of the number of suicides grouped by year using a country input and an 
+         age group input.",
          br(),
          br(),
          fluidRow(

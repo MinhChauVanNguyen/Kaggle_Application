@@ -2,8 +2,9 @@ tabPanel("Country Comparison",
          value = 2,
          br(),
          br(),
-         div(style = "margin-left:30px;", "The Country Comparison tab compares two selected countries's 
-             suicide rate adjusted for Age and Sex."),
+         div(style = "margin-left:30px;", "The",
+         tags$b("Country Comparison"), "tab allows users to compare two selected countries' 
+         suicide rate adjusted for Age and Sex variables."),
          br(),
          br(),
          fluidRow(div(style = "display:inline-block; vertical-align:top; margin-left:200px;",

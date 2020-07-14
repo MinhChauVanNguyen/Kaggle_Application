@@ -22,7 +22,7 @@ ui <- fluidPage(
     )
   ),
   br(),
-  tabsetPanel(id = "tabs", selected = 3, 
+  tabsetPanel(id = "tabs", 
           source(paste0(MAIN_PATH,"/UI/Tab1UI.R"),local=TRUE)$value,
           source(paste0(MAIN_PATH,"/UI/Tab2UI.R"),local=TRUE)$value,
           source(paste0(MAIN_PATH,"/UI/Tab3UI.R"),local=TRUE)$value,

@@ -23,8 +23,6 @@ observeEvent(input$go, {
     ggtitle(label = sprintf("Number of suicides of %s \n for %s age group", 
                             isolate(input$country4),
                             isolate(input$age))) +
-    theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-          axis.title.x = element_text(color = "black", size = 12),
-          axis.title.y = element_text(color = "black", size = 12))
-    })
+    my_theme()
+  })
 })

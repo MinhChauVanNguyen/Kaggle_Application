@@ -17,14 +17,11 @@ observeEvent(input$tick, {
   output$dynamic_plot <- renderPlot({
     data <- suicide_by_age_sex[suicide_by_age_sex$country == input$country1, ]
     ggplot(data = data, aes(x = sex, y = suicide_rate, fill = age)) + 
-      geom_bar(position = "dodge", stat = "identity") +
+      geom_bar(position = "dodge", stat = "identity", alpha = 0.3) +
       ggtitle(label = sprintf("Suicide Rate for %s \n adjusted for Age & Sex", 
                               isolate(input$country1))) +
-      theme(legend.position = "none") + 
-      theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-            axis.title.x = element_text(color = "black", size = 12),
-            axis.title.y = element_text(color = "black", size = 12)) +
-      scale_fill_manual(values = c("pink", "tomato", "light blue", "darkorchid1", "yellow", "greenyellow")) 
+      scale_fill_manual(values = c("#FFC0CB", "#ff6347", "#add8e6", "#bf3eff", "#FFFF00", "#adff2f")) +
+      my_theme()
   })
 })
 
@@ -45,14 +42,11 @@ observeEvent(input$tick, {
   output$dynamic_plot2 <- renderPlot({
     data <- suicide_by_age_sex[suicide_by_age_sex$country == input$country2, ]
     ggplot(data = data, aes(x = sex, y = suicide_rate, fill = age)) + 
-      geom_bar(position = "dodge", stat = "identity") +
+      geom_bar(position = "dodge", stat = "identity", alpha = 0.3) +
       ggtitle(label = sprintf("Suicide Rate for %s \n adjusted for Age & Sex", 
                               isolate(input$country1))) +
-      theme(legend.position = "none") + 
-      theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-            axis.title.x = element_text(color = "black", size = 12),
-            axis.title.y = element_text(color = "black", size = 12)) +
-      scale_fill_manual(values = c("pink", "tomato", "light blue", "darkorchid1", "yellow", "greenyellow")) 
+      scale_fill_manual(values = c("#FFC0CB", "#ff6347", "#add8e6", "#bf3eff", "#FFFF00", "#adff2f")) +
+      my_theme()
   })
 })
 

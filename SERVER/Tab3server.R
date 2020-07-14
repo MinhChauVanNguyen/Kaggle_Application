@@ -21,9 +21,7 @@ observeEvent(input$tock, {
       coord_polar("y", start = 0) +
       ggtitle(label = sprintf("Pie Chart of Age \n Variable for %s", 
                               isolate(input$country3))) +
-      theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-            axis.title.x = element_text(color = "black", size = 12),
-            axis.title.y = element_text(color = "black", size = 12))
+      my_theme()
   })
 })
 
@@ -54,9 +52,7 @@ observeEvent(input$tock, {
                     size = 2, 
                     expand = 0.01) +
       ggtitle(label = sprintf("Scatter plot of different \n Age groups for %s", isolate(input$country3))) +
-      theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-            axis.title.x = element_text(color = "black", size = 12),
-            axis.title.y = element_text(color = "black", size = 12))
+      my_theme()
   })
 })
 
