@@ -1,6 +1,7 @@
 tabPanel("Poisson regression",
          value = 5,
-         hr(),
+         br(),
+         sidebarPanel(
          "Poisson regression was used to predict the number of suicides based on the country input
                 and to interpret the data using the exponent of the coefficients as shown in the summary statistics.
                 Interaction plot (interaction term included) is another important output in this tab, it was used 
@@ -12,17 +13,26 @@ tabPanel("Poisson regression",
                 increases/decreases as the year goes by.",
          br(),
          br(),
-         uiOutput(outputId = "COUNTRY5"),                     # country input
-         uiOutput(outputId = "ENTER"),                        # update button
-         br(), 
-         h3(textOutput(outputId = "TITLE", container = span)),
-         fluidRow(
-           column(5, verbatimTextOutput(outputId = "SUMARY")),         # summary statistic
-           column(6, offset = 1, plotOutput(outputId = "NAME"))),      # interaction plot
+         fluidRow(div(style= "display:inline-block; vertical-align:top;",
+                      column(7, selectInput(inputId = "country5",
+                                            label = "please choose a country", 
+                                            selected = "New Zealand", 
+                                            choices = unique(suicide_by_sex_age$country),
+                                            selectize = FALSE)),
+                      column(2, style = "margin-top:25px;", actionButton(inputId = "ick", label = "Update", icon("paper-plane"))))
+         ),
          br(),
-         fluidRow(
-           column(6, offset = 3, plotOutput(outputId = "SELF"))        # scatter plot
-         ) 
+         fluidRow(column(12, uiOutput(outputId = "INTERACTION")))
+         ),                       
+         fluidRow(column(6, style = "margin-left:80px;",
+           div(style = "margin-left:35px;",
+             fluidRow(h3(textOutput(outputId = "TITLE", container = span))),
+             fluidRow(uiOutput(outputId = "SUMMARY"))
+           ), 
+           br(),
+           br(),
+           fluidRow(uiOutput(outputId = "POISSON"))       
+         ))
 )
 
 

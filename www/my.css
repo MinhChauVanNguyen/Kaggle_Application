@@ -4,30 +4,15 @@ h1{
     line-height: 1.1;
 }
 
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #00FF00 50%);
+}
+
 h3{
     font-weight: 500;
     line-height: 1.1;
 }
 
-h4{
-  background: linear-gradient(90deg, rgba(177,64,200,1) 0%, rgba(109,9,121,1) 35%, rgba(45,1,62,1) 100%);
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
-      }
-  to {
-      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-      }
-}
-}
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: #99FF00 !important;
@@ -45,23 +30,53 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   text-align:center;
 }
 
+/* button */
 .btn{
   background-color:greenyellow; 
-  font-weight:bold
+  font-weight:bold;
+  color:black;
 }
 
-.selectize-input {
-  border:2px solid #00FFCC;
-} 
+.btn:hover{
+  background-color:greenyellow;
+  color:black;
+}
 
-#SUMARY{
+.btn:visited{
+  background-color:greenyellow;
+  color:black;
+}
+
+.btn:focus{
+  background-color:greenyellow;
+  color:black;
+}
+
+.btn:active{
+  background-color:greenyellow;
+  color:black;
+}
+
+#go {
+  margin-top:-15px;
+}
+
+/* select-input */
+
+
+
+#dynamic_summary{
   background-color:honeydew; 
   color:black; 
   font-size:11px; 
   font-style:bold;
+  overflow-y:scroll; 
+  max-height:270px;
+  max-width:80%;
 }
 
 
+/* image */
 #img_plot img {
   max-width: 100%; 
   width: 100%; 
@@ -70,11 +85,45 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 
 #img_plot2 img {
-  max-width: 100%; 
+  max-width:100%; 
   width: 100%; 
   height: auto
 }
 
-.selectize-input{
-  border:2px solid #00FFCC;
+#pie_plot img {
+  height:370px !important;
 }
+
+#scatter_plot img {
+  max-width:100%; 
+  width: 100%; 
+  height:auto
+}
+
+#bar_plot img {
+  width:150%; 
+}
+
+#inter_plot img{
+  width:90% !important; 
+  height:200px !important;
+}
+
+#img_model img{
+  width:80% !important;
+}
+
+#pois_plot img{
+  width:90% !important;
+}
+
+/*TAB PANEL */
+.tabbable > .nav > li > a{
+    color:#18BC9C;
+}
+
+.tabbable > .nav > li[class=active] > a{
+    color:black;
+    font-weight:bold;
+}
+

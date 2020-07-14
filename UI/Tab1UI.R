@@ -1,9 +1,9 @@
 tabPanel("Data Overview",
          value = 1,
-         hr(),
+         br(),
          # Introduction of the application
          h3("Introduction"),
-         "This dataset was obtained with permission from Szamil, a user on Kaggle. 
+         p("This dataset was obtained with permission from Szamil, a user on Kaggle. 
              It contains WHO suicide statistics determined by country, year (from 1979 to 2016), age groups and sex. 
              The purpose of my application is to allow users (who might have an interest in suicide data as well as having a statistical background) 
              to have a better experience in observing and learning more about the statistics. The raw dataset as shown 
@@ -21,13 +21,13 @@ tabPanel("Data Overview",
              A column called",
          tags$b("Suicide Rate"),
          "was added to the dataset (post data cleaning and data processing) for the main functionality of the application,
-             that is to analyze the number of suicides and the suicide rate based on the Age variable.",
+             that is to analyze the number of suicides and the suicide rate based on the Age variable."),
+         tags$a(href="https://www.kaggle.com/szamil/who-suicide-statistics", "click here to obtain the WHO suicide data set used in this application", style = "color:#18BC9C;"),
          hr(),
          # Table of the raw data
          h3("Summary of raw data"),
          br(),
          fluidRow(
            column(12, div(dataTableOutput("dataTable")))
-         ),
-         br()
+         )
 )

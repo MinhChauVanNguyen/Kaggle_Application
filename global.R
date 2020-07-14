@@ -1,3 +1,5 @@
+options(dplyr.summarise.inform = FALSE)
+
 require(DT)                          
 require(tidyverse)
 require(dplyr) 
