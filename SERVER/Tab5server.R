@@ -57,7 +57,7 @@ observeEvent(input$ick, {
 })
 
 output$POISSON <- renderUI({
-  div(imageOutput(outputId = "pois_plot"), style = "margin-top:-90px;")
+  div(imageOutput(outputId = "pois_plot"), style = "margin-top:-90px;margin-left:40px;")
 })
 
 output$pois_plot <- renderImage({
