@@ -5,7 +5,7 @@ h1{
 }
 
 .highlight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #00FF00 50%);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 50%, #e5e5e5 50%);
 }
 
 h3{
@@ -15,7 +15,7 @@ h3{
 
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
-  background-color: #99FF00 !important;
+  background-color: #e5e5e5 !important;
 }
 
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing,.dataTables_wrapper .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
@@ -32,28 +32,28 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 /* button */
 .btn{
-  background-color:greenyellow; 
+  background-color:#c7c7c7; 
   font-weight:bold;
   color:black;
 }
 
 .btn:hover{
-  background-color:greenyellow;
+  background-color:ivory;
   color:black;
 }
 
 .btn:visited{
-  background-color:greenyellow;
+  background-color:#c7c7c7;
   color:black;
 }
 
 .btn:focus{
-  background-color:greenyellow;
+  background-color:#c7c7c7;
   color:black;
 }
 
 .btn:active{
-  background-color:greenyellow;
+  background-color:#c7c7c7;
   color:black;
 }
 
@@ -119,7 +119,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 /*TAB PANEL */
 .tabbable > .nav > li > a{
-    color:#18BC9C;
+    color:blue;
 }
 
 .tabbable > .nav > li[class=active] > a{

@@ -9,19 +9,23 @@ output$pie_plot <- renderImage({
   list(src = "./www/piechart.png")
 }, deleteFile = FALSE) 
 
+dat3 <- eventReactive(input$tock, {
+  data <- suicide_by_age[suicide_by_age$country == input$country3, ]
+  ggplot(data = data, aes(x = "", y = suicide_no, fill = age)) +
+    geom_bar(stat = "identity") +
+    coord_polar("y", start = 0) +
+    ggtitle(label = sprintf("Pie Chart of Age \n Variable for %s", 
+                            isolate(input$country3))) +
+    my_theme()
+})
+
 observeEvent(input$tock, {
   output$PIECHART <- renderUI({
     plotOutput("plot")
   })
   
   output$plot <- renderPlot({
-    data <- suicide_by_age[suicide_by_age$country == input$country3, ]
-    ggplot(data = data, aes(x = "", y = suicide_no, fill = age)) +
-      geom_bar(stat = "identity") +
-      coord_polar("y", start = 0) +
-      ggtitle(label = sprintf("Pie Chart of Age \n Variable for %s", 
-                              isolate(input$country3))) +
-      my_theme()
+    dat3()
   })
 })
 
@@ -34,6 +38,21 @@ output$scatter_plot <- renderImage({
 }, deleteFile = FALSE) 
 
 
+dat4 <- eventReactive(input$tock,{
+  data <- suicide_by_age[suicide_by_age$country == input$country3, ]
+  ggplot(data = data, mapping = aes(x = year, 
+                                    y = suicide_rate, 
+                                    color = age)) + 
+    geom_jitter(alpha = 1) +
+    geom_encircle(aes(x = year, y = suicide_rate), 
+                  data = suicide_select, 
+                  color = "green", 
+                  size = 2, 
+                  expand = 0.01) +
+    ggtitle(label = sprintf("Scatter plot of different \n Age groups for %s", isolate(input$country3))) +
+    my_theme()
+})
+
 observeEvent(input$tock, {
   
   output$SCATTER <- renderUI({
@@ -41,18 +60,7 @@ observeEvent(input$tock, {
   })
   
   output$plot2 <- renderPlot({
-    data <- suicide_by_age[suicide_by_age$country == input$country3, ]
-    ggplot(data = data, mapping = aes(x = year, 
-                                           y = suicide_rate, 
-                                           color = age)) + 
-      geom_jitter(alpha = 1) +
-      geom_encircle(aes(x = year, y = suicide_rate), 
-                    data = suicide_select, 
-                    color = "green", 
-                    size = 2, 
-                    expand = 0.01) +
-      ggtitle(label = sprintf("Scatter plot of different \n Age groups for %s", isolate(input$country3))) +
-      my_theme()
+   dat4()
   })
 })
 

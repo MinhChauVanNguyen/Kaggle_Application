@@ -22,7 +22,7 @@ tabPanel("Data Overview",
          tags$b("Suicide Rate"),
          "was added to the dataset (post data processing) for the main functionality of the application,
          that is to analyze the number of suicides and predict the suicide rate."),
-         tags$a(href="https://www.kaggle.com/szamil/who-suicide-statistics", "click here to obtain the WHO suicide data set used in this application", style = "color:#18BC9C;"),
+         tags$a(href="https://www.kaggle.com/szamil/who-suicide-statistics", "click here to obtain the WHO suicide data set used in this application", style = "color:blue;font-weight:bold;"),
          hr(),
          # Table of the raw data
          h3("Summary of raw data"),

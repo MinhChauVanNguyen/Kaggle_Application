@@ -8,11 +8,11 @@ ui <- fluidPage(
   # .selectize-input doesn't work
   tags$head(
     tags$style(
-      "#country1 {border:2px solid #00FFCC;}
-       #country2 {border:2px solid #00FFCC;}
-       #country3 {border:2px solid #00FFCC;}
-       #country4 {border:2px solid #00FFCC;}
-       #country5 {border:2px solid #00FFCC;}"
+      "#country1 {border:2px solid #787878;}
+       #country2 {border:2px solid #787878;}
+       #country3 {border:2px solid #787878;}
+       #country4 {border:2px solid #787878;}
+       #country5 {border:2px solid #787878;}"
     )
   ),
   headerPanel(
