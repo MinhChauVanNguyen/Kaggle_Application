@@ -5,6 +5,6 @@ account: minhchau
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2617882
-bundleId: 3442998
+bundleId: 3905980
 url: https://minhchau.shinyapps.io/kaggle-application/
-when: 1595884949.75579
+when: 1606331884.59376
