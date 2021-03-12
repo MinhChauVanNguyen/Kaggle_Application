@@ -73,11 +73,10 @@ suicide_select <- suicide_by_age[suicide_by_age$suicide_rate > 0.020 &
 
 ################################ ggplot theme #############################
 
-
 my_theme <- function(...){
-  theme(legend.position = "none") + 
-    theme(plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
-          axis.title.x = element_text(color = "black", size = 12),
-          axis.title.y = element_text(color = "black", size = 12))
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 20, face = "bold.italic", hjust = 0.5),
+    axis.title.x = element_text(color = "black", size = 12),
+    axis.title.y = element_text(color = "black", size = 12))
 }
-

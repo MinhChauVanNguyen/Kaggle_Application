@@ -15,6 +15,4 @@ server <- function(input, output, session){
   source(paste0(MAIN_PATH, "/SERVER/Tab4server.R"), local = TRUE)$value
   
   source(paste0(MAIN_PATH, "/SERVER/Tab5server.R"), local = TRUE)$value
-  
-
 }

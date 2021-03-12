@@ -13,7 +13,7 @@ h3{
     line-height: 1.1;
 }
 
-
+/* Data table */
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: #e5e5e5 !important;
 }
@@ -61,10 +61,6 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   margin-top:-15px;
 }
 
-/* select-input */
-
-
-
 #dynamic_summary{
   background-color:honeydew; 
   color:black; 
@@ -75,14 +71,12 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   max-width:80%;
 }
 
-
 /* image */
 #img_plot img {
   max-width: 100%; 
   width: 100%; 
   height: auto
 }
-
 
 #img_plot2 img {
   max-width:100%; 

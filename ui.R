@@ -1,6 +1,5 @@
 MAIN_PATH <- paste0(getwd(), "/")
 
-# application
 theme_set(theme_bw())
 
 ui <- fluidPage(
